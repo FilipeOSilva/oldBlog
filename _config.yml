@@ -1,0 +1,30 @@
+title: Filipe Silva
+description: 
+
+url: https://long-haul.netlify.app
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Header Option
+# header: large
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+
+social:
+  github: 
+  twitter:
+  facebook:
+  email: 
+  linkedin: 
+
+disqus:
+    shortname: 

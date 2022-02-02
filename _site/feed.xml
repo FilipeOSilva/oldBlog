@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filipe Silva</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 02 Feb 2022 20:23:01 -0300</pubDate>
+    <lastBuildDate>Wed, 02 Feb 2022 20:23:01 -0300</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator><item>
+        <title>Meu Primeiro Post</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;este primeiro post irei explicar como criar seu blog utilizando Jekyll e o Gitub.&lt;/p&gt;
+
+&lt;p&gt;Jekyll é um Framework (gerador de sites estaticos) desenvolvido em &lt;a href=&quot;https://www.ruby-lang.org/pt/documentation/installation/&quot;&gt;Ruby&lt;/a&gt;, pratico e fácil de usar. Atravez do Github podemos ter um blog em poucos passos.&lt;/p&gt;
+
+&lt;p&gt;Instalação de ferramentas necessárias:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;git
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby-full build-essential zlib1g-dev rubygems&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Para instalar o Jekyll basta rodar o seguinte comando:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;O proximo passo é editar o arquivo gemfile, lá é explicado a dinamica da ferramenta. No meu caso:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;# Comentar a linha:&lt;/span&gt;
+gem &lt;span class=&quot;s2&quot;&gt;&quot;jekyll&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 4.2.1&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# E descomentar a linha&lt;/span&gt;
+gem &lt;span class=&quot;s2&quot;&gt;&quot;github-pages&quot;&lt;/span&gt;, group: :jekyll_plugins&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Após basta rodar o comando:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle update github-pages&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Aqui tive a seguinte saida:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;Bundler could not find compatible versions &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;gem &lt;span class=&quot;s2&quot;&gt;&quot;jekyll-feed&quot;&lt;/span&gt;:
+  In snapshot &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Gemfile.lock&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+    jekyll-feed &lt;span class=&quot;o&quot;&gt;(&amp;gt;=&lt;/span&gt; 0.16.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+  In Gemfile:
+    github-pages was resolved to 36, which depends on
+      jekyll-feed &lt;span class=&quot;o&quot;&gt;(=&lt;/span&gt; 0.2.3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+    minima &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;~&amp;gt; 2.5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; was resolved to 2.5.1, which depends on
+      jekyll-feed &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;~&amp;gt; 0.9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+Running &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle update&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; will rebuild your snapshot from scratch, using only
+the gems &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;your Gemfile, which may resolve the conflict.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Como podemos ver, não existe uma versão “candidata”, ou melhor, compativel para o jekyll-feed, para resolver isso executei o comando:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle update jekyll-feed&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Pronto, agora já temos um blog “funcional”. 
+O proximo passo é postar esse site no Github, para isso devemos criar um repositório com (esse passo é importante) o mesmo nome do seu usuário do Github seguidos de “github.io”. Como exemplo:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;SEU_USER].github.io&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Agora basta fazer um “push” do Jekyll que criamos, para o github no repositório recem criado.&lt;/p&gt;
+
+&lt;p&gt;Veja a documentação do &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; e do &lt;a href=&quot;https://pages.github.com&quot;&gt;Github&lt;/a&gt; para mais informações.&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;este primeiro post irei explicar como criar seu blog utilizando Jekyll e o Gitub.&lt;/p&gt;
+</description><pubDate>Wed, 02 Feb 2022 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/blog/primeiro-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/primeiro-post/</guid></item></channel>
+</rss>
