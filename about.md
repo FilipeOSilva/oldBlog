@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sobre Filipe Silva
+title: About
 ---
 
 <div class="post">
