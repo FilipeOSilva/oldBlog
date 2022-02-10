@@ -5,9 +5,44 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 02 Feb 2022 20:23:01 -0300</pubDate>
-    <lastBuildDate>Wed, 02 Feb 2022 20:23:01 -0300</lastBuildDate>
+    <pubDate>Thu, 10 Feb 2022 18:31:06 -0300</pubDate>
+    <lastBuildDate>Thu, 10 Feb 2022 18:31:06 -0300</lastBuildDate>
     <generator>Jekyll v4.1.1</generator><item>
+        <title>Zip e Unzip</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;omo usar essas ferramentas, pelo terminal, ótimas para compactação e descompatação de arquivos.&lt;/p&gt;
+
+&lt;p&gt;Iremos separar em duas seções esse post, assim falarei de cada comando a parte.&lt;/p&gt;
+
+&lt;h2 id=&quot;zip&quot;&gt;Zip&lt;/h2&gt;
+
+&lt;p&gt;O comando zip é utilizado para “zipar” arquivos atravez da linha de comandos. Para utiliza-lo, primeiro veja se ele está instalado em usa distribuição. Para isso:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt list zip
+Listing... Pronto
+zip/focal,now 3.0-11build1 amd64 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;instalado,automático]
+zip/focal 3.0-11build1 i386
+
+&lt;span class=&quot;c&quot;&gt;# se não estiver instalado, usando o serviço apt&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;zip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;“Zipando” uma pasta, de forma recorrente:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;zip &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; test.zip pasta/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;unzip&quot;&gt;Unzip&lt;/h2&gt;
+
+&lt;p&gt;Já o unzip é para “deszipar” arquivos .zip. O primeiro passo é ver se o programa está disponivel na sua maquina:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;apt list unzip
+Listing... Pronto
+unzip/focal,now 6.0-25ubuntu1 amd64 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;instalado]
+unzip/focal 6.0-25ubuntu1 i386
+
+&lt;span class=&quot;c&quot;&gt;# se não estiver instalado, usando o serviço apt&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;unzip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Aqui temos os seguintes parametros interessantes. O primeiro, utizado para “deszipar” um arquivo:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;unzip test.zip &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; pasta&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Temos também a possibilidade de “listar” o conteúdo dentro do arquivo “zipado”:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;unzip &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; test.zip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;C&lt;/span&gt;omo usar essas ferramentas, pelo terminal, ótimas para compactação e descompatação de arquivos.&lt;/p&gt;
+</description><pubDate>Thu, 10 Feb 2022 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/blog/unzip-zip/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/unzip-zip/</guid></item><item>
         <title>Meu Primeiro Post</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;este primeiro post irei explicar como criar seu blog utilizando Jekyll e o Gitub.&lt;/p&gt;
 
@@ -48,7 +83,11 @@ O proximo passo é postar esse site no Github, para isso devemos criar um reposi
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;SEU_USER].github.io&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Agora basta fazer um “push” do Jekyll que criamos, para o github no repositório recem criado.&lt;/p&gt;
 
-&lt;p&gt;Veja a documentação do &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; e do &lt;a href=&quot;https://pages.github.com&quot;&gt;Github&lt;/a&gt; para mais informações.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Dica&lt;/em&gt;&lt;/strong&gt;: Para roda o Jekyll localmente, basta ir até a pasta onde está o seu projeto e rodar o seguinte comando:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Assim podemos ir editando em nossa maquina e vendo como está ficando a pagina.&lt;/p&gt;
+
+&lt;p&gt;Ficou curioso, quer mais informações? Veja a documentação do &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; e do &lt;a href=&quot;https://pages.github.com&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
 </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;N&lt;/span&gt;este primeiro post irei explicar como criar seu blog utilizando Jekyll e o Gitub.&lt;/p&gt;
 </description><pubDate>Wed, 02 Feb 2022 00:00:00 -0300</pubDate>

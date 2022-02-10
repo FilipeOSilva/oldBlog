@@ -64,7 +64,13 @@ O proximo passo é postar esse site no Github, para isso devemos criar um reposi
 
 Agora basta fazer um "push" do Jekyll que criamos, para o github no repositório recem criado.
 
-Veja a documentação do [Jekyll docs][jekyll] e do [Github][github_docs] para mais informações.
+***Dica***: Para roda o Jekyll localmente, basta ir até a pasta onde está o seu projeto e rodar o seguinte comando:
+{%- highlight shell -%} 
+$ bundle exec jekyll serve 
+{%- endhighlight -%}
+Assim podemos ir editando em nossa maquina e vendo como está ficando a pagina.
+
+Ficou curioso, quer mais informações? Veja a documentação do [Jekyll docs][jekyll] e do [Github][github_docs].
 
 [github_docs]: https://pages.github.com
 [jekyll]:      http://jekyllrb.com

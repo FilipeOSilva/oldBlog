@@ -1,7 +1,7 @@
 title: Filipe Silva
 description: 
 
-url: https://long-haul.netlify.app
+url: https://filipeosilva.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
