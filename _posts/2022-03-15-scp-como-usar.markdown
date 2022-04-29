@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SCP transitando arquivos entre servidores Linux"
-date:   2022-02-10
+date:   2022-03-15
 ---
 
 <p class="intro"><span class="dropcap">O</span> scp é uma maneira rápida e pratica para transferir arquivos entre servidores Linux pelo terminal.</p>
