@@ -5,9 +5,51 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Mar 2022 09:14:00 -0300</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2022 09:14:00 -0300</lastBuildDate>
+    <pubDate>Sun, 29 May 2022 17:18:16 -0300</pubDate>
+    <lastBuildDate>Sun, 29 May 2022 17:18:16 -0300</lastBuildDate>
     <generator>Jekyll v4.1.1</generator><item>
+        <title>GIT, dicas e lembretes</title>
+        <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;O&lt;/span&gt; GIT é uma versionador descentralizada de arquivos, e aqui vão algumas dicas e macetes para utilizar essa ferramenta.&lt;/p&gt;
+
+&lt;p&gt;A ideia dessa página é servir de memorix para utilizar a ferramenta, portanto sempre que eu sentir necessidade irei atualizar com novos comandos e dicas de como podemos usar melhor a ferramenta, lembrando que é frente a minha experiência.&lt;/p&gt;
+
+&lt;h2 id=&quot;criando-uma-tag&quot;&gt;Criando uma TAG&lt;/h2&gt;
+
+&lt;p&gt;TAGs geralmente são usadas para indicar versões. São muito úteis e por costume fazemos na MAINLINE (lembrando que esse processo é feito após MERGES e a MAIN estar atualizada). Para criar uma TAG:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git tag &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &amp;lt;name&amp;gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &amp;lt;message&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Com a TAG criada, basta “empurrar” para o server:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push origin &amp;lt;TAG_name&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;commit-supervisioado&quot;&gt;Commit “supervisioado”&lt;/h2&gt;
+
+&lt;p&gt;Existem varias maneiras de fazer um commit, mas a que mais tem me agradado é uma que possibilita revisar, alteração por alteração, em arquivo por arquivo e  ir aplicando se desejo ou não “jogar” naquele alteração neste commit. Para isso:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Com isso irá aparecer as alterações e um pequeno Menu de possibilidades:&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Stage this hunk &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;y,n,q,a,d,j,J,g,/,e,?]? ?
+y - stage this hunk
+n - &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;not stage this hunk
+q - quit&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the file
+d - &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;not stage this hunk or any of the later hunks &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the file
+g - &lt;span class=&quot;k&quot;&gt;select &lt;/span&gt;a hunk to go to
+/ - search &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+e - manually edit the current hunk
+? - print &lt;span class=&quot;nb&quot;&gt;help&lt;/span&gt;
+@@ &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt;,7 +1,7 @@
+ &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+ layout: post
+ title:  &lt;span class=&quot;s2&quot;&gt;&quot;GIT, dicas e lembretes&quot;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-date&lt;/span&gt;:   2022-03-22
++date:   2022-05-29
+ &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1/2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; Stage this hunk &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;y,n,q,a,d,j,J,g,/,e,?]?&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;Após selecionar os arquivos e alterações que serão commitadas, irá abrir o editor de texto padrão do seu terminal para que seja escrita a mensagem do commit. Salvado e saindo o commit estará feito.&lt;/p&gt;
+
+</description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;O&lt;/span&gt; GIT é uma versionador descentralizada de arquivos, e aqui vão algumas dicas e macetes para utilizar essa ferramenta.&lt;/p&gt;
+</description><pubDate>Sun, 29 May 2022 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/blog/dicas-para-git/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/dicas-para-git/</guid></item><item>
         <title>SCP transitando arquivos entre servidores Linux</title>
         <description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;O&lt;/span&gt; scp é uma maneira rápida e pratica para transferir arquivos entre servidores Linux pelo terminal.&lt;/p&gt;
 
@@ -24,7 +66,7 @@
 &lt;p&gt;OBS.: Aqui iremos recerber no arquivo na pasta onde estamos.&lt;/p&gt;
 
 </description><description>&lt;p class=&quot;intro&quot;&gt;&lt;span class=&quot;dropcap&quot;&gt;O&lt;/span&gt; scp é uma maneira rápida e pratica para transferir arquivos entre servidores Linux pelo terminal.&lt;/p&gt;
-</description><pubDate>Thu, 10 Feb 2022 00:00:00 -0300</pubDate>
+</description><pubDate>Tue, 15 Mar 2022 00:00:00 -0300</pubDate>
         <link>http://localhost:4000/blog/scp-como-usar/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/scp-como-usar/</guid></item><item>
         <title>Zip e Unzip</title>
