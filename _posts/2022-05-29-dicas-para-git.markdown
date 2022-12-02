@@ -4,7 +4,7 @@ title:  "GIT, dicas e lembretes"
 date:   2022-05-29
 ---
 
-<p class="intro"><span class="dropcap">O</span> GIT é uma versionador descentralizada de arquivos, e aqui vão algumas dicas e macetes para utilizar essa ferramenta.</p>
+<p class="intro"><span class="dropcap">O</span> GIT é uma versionador descentralizado de arquivos, e aqui vão algumas dicas e macetes para utilizar essa ferramenta.</p>
 
 A ideia dessa página é servir de memorix para utilizar a ferramenta, portanto sempre que eu sentir necessidade irei atualizar com novos comandos e dicas de como podemos usar melhor a ferramenta, lembrando que é frente a minha experiência.
 
@@ -26,7 +26,7 @@ $ git push origin <TAG_name>
 
 {%- endhighlight -%}
 
-## Commit "supervisioado"
+## Commit "supervisionado"
 
 Existem varias maneiras de fazer um commit, mas a que mais tem me agradado é uma que possibilita revisar, alteração por alteração, em arquivo por arquivo e  ir aplicando se desejo ou não "jogar" naquele alteração neste commit. Para isso:
 
