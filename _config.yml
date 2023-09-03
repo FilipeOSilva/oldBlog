@@ -4,8 +4,8 @@ description:
 baseurl: /oldBlog
 url: "https://filipeosilva.github.io"
 
-#paginate_path: oldBlog/blog/page:num/
-#permalink: oldBlog/blog/:title/
+paginate_path: oldBlog/blog/page:num/
+permalink: oldBlog/:title/
 
 # Header Option
 # header: large
