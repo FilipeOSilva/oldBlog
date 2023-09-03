@@ -5,7 +5,7 @@ baseurl: /oldBlog
 url: "https://filipeosilva.github.io"
 
 paginate_path: oldBlog/blog/page:num/
-permalink: oldBlog/:title/
+permalink: blog/:title/
 
 # Header Option
 # header: large
@@ -17,9 +17,9 @@ paginate: 10
 
 navigation:
   - title: Home
-    url: index.html
+    url: oldBlog/index.html
   - title: About
-    url: about
+    url: oldBlog/about
 
 social:
   github: 
