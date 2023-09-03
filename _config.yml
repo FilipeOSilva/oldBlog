@@ -2,7 +2,7 @@ title: Filipe Silva
 description: 
 
 url: https://filipeosilva.github.io/oldBlog/
-paginate_path: "blog/page:num/"
+paginate_path: "/oldBlog/blog/page:num/"
 permalink: blog/:title/
 
 # Header Option
