@@ -17,9 +17,9 @@ paginate: 10
 
 navigation:
   - title: Home
-    url: /index.html
+    url: index.html
   - title: About
-    url: /about
+    url: about
 
 social:
   github: 
