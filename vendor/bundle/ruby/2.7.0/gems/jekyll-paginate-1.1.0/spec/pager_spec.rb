@@ -21,20 +21,20 @@ RSpec.describe(Jekyll::Paginate::Pager) do
   end
 
   context "with paginate_path set to a subdirectory with no index.html" do
-    let(:site) { build_site({'paginate_path' => '/oldBlog/blog/page-:num'}) }
+    let(:site) { build_site({'paginate_path' => '/blog/page-:num'}) }
 
     it "determines the correct pagination path for each page" do
       expect(described_class.paginate_path(site, 1)).to eql("/index.html")
-      expect(described_class.paginate_path(site, 2)).to eql("/oldBlog/blog/page-2")
+      expect(described_class.paginate_path(site, 2)).to eql("/blog/page-2")
     end
   end
 
   context "with paginate_path set to a subdirectory with no index.html with num pages being in subdirectories" do
-    let(:site) { build_site({'paginate_path' => '/oldBlog/blog/page/:num'}) }
+    let(:site) { build_site({'paginate_path' => '/blog/page/:num'}) }
 
     it "determines the correct pagination path for each page" do
       expect(described_class.paginate_path(site, 1)).to eql("/index.html")
-      expect(described_class.paginate_path(site, 2)).to eql("/oldBlog/blog/page/2")
+      expect(described_class.paginate_path(site, 2)).to eql("/blog/page/2")
     end
   end
 

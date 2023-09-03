@@ -3,7 +3,7 @@ description:
 
 url: https://filipeosilva.github.io/oldBlog/
 paginate_path: "/oldBlog/blog/page:num/"
-permalink: blog/:title/
+permalink: oldBlog/blog/:title/
 
 # Header Option
 # header: large
