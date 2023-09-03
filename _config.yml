@@ -17,9 +17,9 @@ paginate: 10
 
 navigation:
   - title: Home
-    url: oldBlog/index.html
+    url: /index.html
   - title: About
-    url: oldBlog/about
+    url: /about
 
 social:
   github: 
