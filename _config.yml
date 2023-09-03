@@ -1,9 +1,10 @@
 title: Filipe Silva
 description: 
 
+baseurl: /oldBlog
 url: "https://filipeosilva.github.io"
-baseurl: "/oldBlog"
-paginate_path: "/blog/page:num/"
+
+paginate_path: /blog/page:num/
 permalink: blog/:title/
 
 # Header Option
